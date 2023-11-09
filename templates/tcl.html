@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Control</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <!--container-->
+
+    <div id="firstid" class="container" style="pointer-events: none;">
+        <div class="navbar">
+            <span class="text-white">TV Remote ( TCL TV )</span>
+        </div>        
+
+
+        <div class="menu-grid2">
+            <div id="rcorners3" class="back1 animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                    <span style="color: white;" class="grid2class">BACK</span>
+            </div>
+            <div id="rcorners3" class="info1 animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white;" class="grid2class">INFO</span>
+            </div>
+            <div id="rcorners3" class="guide1 animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white;" class="grid2class">GUIDE</span>
+            </div>
+            <div id="rcorners3" class="exit1 animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white;" class="grid2class">EXIT</span>
+            </div>
+        </div>
+        <div class="menu-grid3">
+            <div style="margin-top: 30px; margin-left: 10%;">
+                <div id="rcorners2" class="menu1 animated-item d-flex flex-row align-items-center justify-content-center">
+                  <i class="fas fa-bars menu-icon active text-white"></i>
+                </div>
+                <span class="label text-white" style="margin-left: 10%;">Menu</span>
+            </div>         
+            <div style="margin-top: 30px; margin-left: 10%;">
+                <div id="rcorners2" class="togglemenuicon animated-item d-flex flex-row align-items-center justify-content-center">
+                  <img src="static/icons/123icon.png" alt="123 Icon" class="menu-icon" width="20px" height="20px" style="-webkit-filter: invert(100%);filter: invert(100%);">
+                </div>
+                <span class="countclass label text-white" style="margin-left: 18%;">123</span>
+              </div>              
+            <div style="margin-top: 30px; margin-left: 10%;">
+                <div id="rcorners2" class="search1 animated-item d-flex flex-row align-items-center justify-content-center">
+                  <i class="fas fa-list active text-white"></i>
+                </div>
+                <span class="label text-white" style="margin-left: 10%;">Ch List</span>
+            </div>   
+            <div style="margin-top: 30px; margin-left: 10%;">
+                <div id="rcorners2" class="setting1 animated-item d-flex flex-row align-items-center justify-content-center">
+                  <i class="fas fa-cog menu-icon active text-white"></i>
+                </div>
+                <span class="label text-white" style="margin-left: 10%;">Pannel</span>
+            </div>   
+        </div>
+        <div class="menu-grid3">
+            <div id="rcorners2" class="animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <i class="mute1 fas fa-volume-mute active text-white"></i>
+            </div>
+        </div>
+        
+    <div class="menu-grid4">
+        <div class="d-flex flex-row mt-4 justify-content-between px-1" style="padding: 20px;">
+            <div class="d-flex flex-column rounded-bg py-3 px-2 justify-content-center align-items-center" style="background-color: #242121;">
+                <i class="volumeup fas fa-plus active text-white py-3 control-icon animated-item"></i>
+                <span class="label py-3" style="color: white;">Volume</span>
+                <i class="volumedown fas fa-minus active text-white py-3 control-icon animated-item"></i>
+            </div>
+
+            <div class="animated-item enter-container position-relative d-flex flex-row justify-content-center align-items-center">
+                <div class="circle ok-outer position-absolute"></div>
+                <div class="enter circle ok-inner position-absolute" style="background-color: blue;border: 10px;border-color: black;">
+                    <span style="color: white;">OK</span>
+                </div>
+                <i class="right fas fa-caret-right active text-white position-absolute control-icon right" style="font-size: 3em;"></i>
+                <i class="bottom fas fa-caret-right active text-white position-absolute control-icon bottom" style="font-size: 3em;"></i>
+                <i class="left fas fa-caret-right active text-white position-absolute control-icon left" style="font-size: 3em;"></i>
+                <i class="top fas fa-caret-right active text-white position-absolute control-icon top" style="font-size: 3em;"></i>
+            </div>
+            
+            <div class="d-flex flex-column rounded-bg py-3 px-2 justify-content-center align-items-center" style="background-color: #242121;">
+                <i class="channelup animated-item fas fa-chevron-up active text-white py-3 control-icon"></i>
+                <span class="label py-3" style="color: white;">Channel</span>
+                <i class="channeldown animated-item fas fa-chevron-down active text-white py-3 control-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="menugridis5">
+        <div class="menu-grid5" style="margin-top: 10%;">
+            <div id="rcorners11" class="one animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                    <span style="color: white; font-size: 1.5em;" class="grid2class">1</span>
+            </div>
+            <div id="rcorners11" class="two animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white; font-size: 1.5em;" class="grid2class">2</span>
+            </div>
+            <div id="rcorners11" class="three animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white; font-size: 1.5em;" class="grid2class">3</span>
+            </div>
+            <div id="rcorners11" class="four animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white; font-size: 1.5em;" class="grid2class">4</span>
+            </div>
+            <div id="rcorners11" class="five animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white; font-size: 1.5em;" class="grid2class">5</span>
+            </div>
+            <div id="rcorners11" class="six animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white; font-size: 1.5em;" class="grid2class">6</span>
+            </div>
+            <div id="rcorners11" class="seven animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white; font-size: 1.5em;" class="grid2class">7</span>
+            </div>
+            <div id="rcorners11" class="eight animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white; font-size: 1.5em;" class="grid2class">8</span>
+            </div>
+            <div id="rcorners11" class="nine animated-item d-flex flex-row justify-content-center align-items-center" style="margin-top: 10px;margin-left: 10px;">
+                <span style="color: white; font-size: 1.5em;" class="grid2class">9</span>
+            </div>
+            <div id="rcorners11" class="zero animated-item d-flex flex-row justify-content-center align-items-center center-last-column" style="margin-top: 10px; margin-left: 10px;">
+                <span style="color: white; font-size: 1.5em;" class="grid2class">0</span>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <div class="menu-grid3" style="margin-top: 10%;">
+        <div style="margin-top: 30px; margin-left: 10%;">
+            <div id="rcorners4" class="f1 animated-item d-flex flex-column align-items-center">
+                <span class="label text-white">F1</span>
+                <div id="rcorners5" class="animated-item d-flex justify-content-end">
+                    <div style="width: 20%; height: 30%; background-color: red;"></div>
+                </div>
+            </div>            
+        </div>      
+        <div style="margin-top: 30px; margin-left: 10%;">
+            <div id="rcorners4" class="f2 animated-item d-flex flex-column align-items-center">
+                <span class="label text-white">F2</span>
+                <div id="rcorners6" class="animated-item d-flex justify-content-end">
+                    <div style="width: 20%; height: 30%; background-color: green;"></div>
+                </div>
+            </div>            
+        </div>
+        <div style="margin-top: 30px; margin-left: 10%;">
+            <div id="rcorners4" class="f3 animated-item d-flex flex-column align-items-center">
+                <span class="label text-white">F3</span>
+                <div id="rcorners7" class="animated-item d-flex justify-content-end">
+                    <div style="width: 20%; height: 30%; background-color: yellow;"></div>
+                </div>
+            </div>            
+        </div>      
+        <div style="margin-top: 30px; margin-left: 10%;">
+            <div id="rcorners4" class="f4 animated-item d-flex flex-column align-items-center">
+                <span class="label text-white">F4</span>
+                <div id="rcorners8" class="animated-item d-flex justify-content-end">
+                    <div style="width: 20%; height: 30%; background-color: blue;"></div>
+                </div>
+            </div>            
+        </div>                         
+    </div>
+
+
+    </div>
+
+    <div id="loader" class="loader"></div>
+    <div id="error-message" class="error-message"></div>
+
+    <div id="secondid" class="row justify-content-center mt-10">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="text-center">TCL TV</h1>
+                    <form method="POST" action="/send-command">
+                        <button type="button" class="btn btn-primary btn-block" id="connect-button">Auto Connect</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="error-message" id="errormodalmessage" style="background-color: #fff;" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Not Found</h5>
+              <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close" onclick="closethemodal()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>TV Not Found</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        // Add a click event listener to the elements with the animated-item class in each menu-grid
+        const errorModal = document.getElementById('errormodalmessage');
+        errorModal.style.display="none"
+        function closethemodal(){
+        errorModal.style.display="none"
+        }
+        document.querySelectorAll('.menu-grid1 .animated-item, .menu-grid2 .animated-item, .menu-grid3 .animated-item,.menu-grid4 .animated-item,.menu-grid5 .animated-item').forEach((item) => {
+          item.addEventListener('click', () => {
+            item.classList.add('active');
+            setTimeout(() => {
+              item.classList.remove('active');
+            }, 200);
+          });
+        });
+      </script>
+      
+      <script>
+        const toggleButton = document.querySelector('.togglemenuicon'); // Change this selector to the appropriate one for your "123" icon.
+        const menuGrid4 = document.querySelector('.menu-grid4');
+        const menuGrid5 = document.querySelector('.menugridis5');
+        menuGrid5.style.display = 'none';
+        // Initialize the state to show menu-grid4
+        let isMenuGrid5Visible = false;
+
+        toggleButton.addEventListener('click', () => {
+            if (isMenuGrid5Visible) {
+                menuGrid4.style.display = 'block';
+                menuGrid5.style.display = 'none';
+                isMenuGrid5Visible = false;
+            } else {
+                menuGrid4.style.display = 'none';
+                menuGrid5.style.display = 'block';
+                isMenuGrid5Visible = true;
+            }
+        });
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const homeButtons = document.querySelectorAll('.home1');
+        const powerButtons = document.querySelectorAll('.power1');
+        const backButtons = document.querySelectorAll('.back1');
+        const infoButtons = document.querySelectorAll('.info1');
+        const toolsButtons = document.querySelectorAll('.tools1');
+        const guideButtons = document.querySelectorAll('.guide1');
+        const exitButtons = document.querySelectorAll('.exit1');
+        const menuButtons = document.querySelectorAll('.menu1');
+        const onetwo3Buttons = document.querySelectorAll('.countclass');
+        const serachButtons = document.querySelectorAll('.search1');
+        const settingButtons = document.querySelectorAll('.setting1');
+        const muteButtons = document.querySelectorAll('.mute1');
+        const volumeupButtons = document.querySelectorAll('.volumeup');
+        const volumedownButtons = document.querySelectorAll('.volumedown');
+        const channelupButtons = document.querySelectorAll('.channelup');
+        const channeldownButtons = document.querySelectorAll('.channeldown');
+        const enterButton = document.querySelector('.enter');
+        const rightButtons = document.querySelectorAll('.right');
+        const bottomButtons = document.querySelectorAll('.bottom');
+        const leftButtons = document.querySelectorAll('.left');
+        const topButtons = document.querySelectorAll('.top');
+        const one = document.querySelectorAll('.one');
+        const two = document.querySelectorAll('.two');
+        const three = document.querySelectorAll('.three');
+        const four = document.querySelectorAll('.four');
+        const five = document.querySelectorAll('.five');
+        const six = document.querySelectorAll('.six');
+        const seven = document.querySelectorAll('.seven');
+        const eight = document.querySelectorAll('.eight');
+        const nine = document.querySelectorAll('.nine');
+        const zero = document.querySelectorAll('.zero');
+
+        const f1 = document.querySelectorAll('.f1');
+        const f2 = document.querySelectorAll('.f2');
+        const f3 = document.querySelectorAll('.f3');
+        const f4 = document.querySelectorAll('.f4');
+
+        powerButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('power');
+            });
+        });
+
+        homeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('home');
+            });
+        });
+
+        backButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('back');
+            });
+        });
+
+        infoButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('info');
+            });
+        });
+
+        toolsButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('tools');
+            });
+        });
+
+        guideButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('guide');
+            });
+        });
+
+        exitButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('exit');
+            });
+        });
+
+        menuButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('menu');
+            });
+        });
+
+        serachButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('chlist');
+            });
+        });
+
+        settingButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('pannel');
+            });
+        });
+
+        muteButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('mute');
+            });
+        });
+
+        volumeupButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('volumeup');
+            });
+        });
+
+        volumedownButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('volumedown');
+            });
+        });
+
+        channelupButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('channelup');
+            });
+        });
+
+        channeldownButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('channeldown');
+            });
+        });
+
+        enterButton.addEventListener('click', () => {
+            sendButtonClass('enter');
+        });
+
+        topButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('goup');
+            });
+        });
+
+        leftButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('goleft');
+            });
+        });
+
+        rightButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('goright');
+            });
+        });
+
+        bottomButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('godown');
+            });
+        });
+
+        one.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('one');
+            });
+        });
+        two.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('two');
+            });
+        });
+        three.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('three');
+            });
+        });
+        four.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('four');
+            });
+        });
+        five.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('five');
+            });
+        });
+        six.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('six');
+            });
+        });
+
+        seven.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('seven');
+            });
+        });
+        eight.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('eight');
+            });
+        });
+        nine.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('nine');
+            });
+        });
+        zero.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('zero');
+            });
+        });
+
+        f1.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('f1');
+            });
+        });
+
+        f2.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('f2');
+            });
+        });
+
+        f3.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('f3');
+            });
+        });
+
+        f4.forEach(button => {
+            button.addEventListener('click', () => {
+                sendButtonClass('f4');
+            });
+        });
+
+        function sendButtonClass(buttonClass) {
+            const data = {
+            buttonClass: buttonClass,
+        };
+        fetch('/tcl-button-pressed', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Button class sent successfully');
+                } else {
+                    console.error('Failed to send button class');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+            console.warn(buttonClass);
+        }
+    });
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const connectButton = document.getElementById('connect-button');
+        const secondid = document.getElementById('secondid');
+        const firstid = document.getElementById('firstid');
+        const loader = document.getElementById('loader');
+        const errorModal = document.getElementById('errormodalmessage');
+
+        connectButton.addEventListener('click', function () {
+            loader.style.display = "block";
+
+            const manualIP = "192.168.3.6";
+            const data = {
+                ip: manualIP
+            };
+
+            fetch('/tcl-send-ip', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                secondid.style.display = "none";
+                firstid.style.pointerEvents = "auto";
+                loader.style.display = "none";
+                console.log('Server response:', data);
+            })
+            .catch(error => {
+                loader.style.display = "none";
+                errorModal.style.display = 'block';
+            });
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

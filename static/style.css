@@ -1,0 +1,260 @@
+body {
+    margin: 0%;
+}
+.navbar {
+  background-color: #000; /* Set the background color to black or your desired color */
+  color: #fff; /* Set the text color to white or your desired color */
+  position: fixed; /* Fix the element's position */
+  top: 0; /* Stick it to the top of the viewport */
+  left: 0; /* You can adjust left as needed */
+  right: 0; /* You can adjust right as needed */
+  z-index: 1000; /* Adjust the z-index to control its stacking order */
+  padding: 10px 20px; /* Add padding to adjust the size and spacing as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for visual effect */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 20px;
+    background-color: rgb(22, 14, 14);
+  }
+div.menu-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.dark-bg {
+    background-color: #000000; /* Set the background color to pure dark (black) */
+  }
+  
+  /* Add a bar at the bottom */
+  .dark-bg:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid white; /* Add a white bar at the bottom */
+    margin-top: 5px; /* Adjust the margin for spacing */
+  }  
+
+div.menu-grid>div {
+    padding: 10px 35px;
+}
+
+span.label {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+div.menu-grid>div>i {
+    color: #2e2e2e;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+div.menu-grid>div>i.active {
+    color: #d51600;
+}
+
+div.rounded-bg {
+    background: #d9d9d9;
+    border-radius: 50px;
+}
+
+div.grey-bg {
+    background: #d9d9d9;
+    border-radius: 50%;
+}
+
+i.home-icon {
+    font-size: 24px;
+    color: #a1a1a1;
+}
+
+i.control-icon {
+    font-size: 24px;
+    color: #2e2e2e;
+}
+
+div.circle {
+    border: 1px solid #c2c1c1;
+    border-radius: 50%;
+}
+
+div.ok-inner {
+    padding: 30px;
+}
+
+div.ok-outer {
+    padding: 100px;
+}
+
+i.right {
+    transform: translate(70px);
+}
+
+i.bottom {
+    transform: rotate(90deg) translate(70px);
+}
+
+i.left {
+    transform: rotate(180deg) translate(70px);
+}
+
+i.top {
+    transform: rotate(270deg) translate(70px);
+}
+
+
+
+
+  
+  #rcorners1 {
+    border-radius: 90px;
+    background: #e41616;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+  }
+
+  #rcorners2 {
+    border-radius: 90px;
+    background: #242121;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    box-shadow: 2px 2px 5px rgba(8, 1, 1, 0.5);
+    transition: background-color 0.2s;
+  }
+  #rcorners3 {
+    border-radius: 20px;
+    background: #242121;
+    padding: 0px;
+    width: 50px;
+    height: 30px;
+    top: 5px;
+    box-shadow: 2px 2px 5px rgba(8, 1, 1, 0.5);
+    transition: background-color 0.2s;
+  }
+  #rcorners4 {
+    border-radius: 5px;
+    background: #242121;
+    padding: 0px;
+    width: 70px;
+    height: 40px;
+    top: 5px;
+    box-shadow: 2px 2px 5px rgba(8, 1, 1, 0.5);
+    transition: background-color 0.2s;
+  }
+  #rcorners5 {
+    border-radius: 5px;
+    background: red;
+    width: 50px;
+    height: 10px;
+    top: 5px;
+    transition: background-color 0.2s;
+  }
+  #rcorners6 {
+    border-radius: 5px;
+    background: green;
+    width: 50px;
+    height: 10px;
+    top: 5px;
+    transition: background-color 0.2s;
+  }
+  #rcorners7 {
+    border-radius: 5px;
+    background: yellow;
+    width: 50px;
+    height: 10px;
+    top: 5px;
+    transition: background-color 0.2s;
+  }
+  #rcorners8 {
+    border-radius: 5px;
+    background: blue;
+    width: 50px;
+    height: 10px;
+    top: 5px;
+    transition: background-color 0.2s;
+  }
+  #rcorners11 {
+    border-radius: 12px;
+    background: #242121;
+    padding: 0px;
+    width: 80px;
+    height: 50px;
+    top: 5px;
+    box-shadow: 2px 2px 5px rgba(24, 2, 2, 0.5);
+    transition: background-color 0.2s;
+  }
+  .center-last-column {
+    grid-column: 2 / 3; /* Center the last column */
+  }
+  .grid2class {
+    font-size: 12px;
+  }
+  .custom-button:hover {
+    background-color: #df0d0d;
+  }
+  
+  .custom-button:active {
+    transform: scale(0.95);
+  }
+
+  .menu-grid1 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.menu-grid2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.menu-grid3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.menu-grid5 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.menu-grid7 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+/* Apply the click animation effect */
+.animated-item {
+    transition: transform 0.2s;
+  }
+  
+  /* Scale down the element on click */
+  .animated-item.active {
+    transform: scale(0.9);
+  }
+
+  /* Loader styles */
+  .loader {
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid #007bff;
+    border-radius: 50%;
+    width: 70px; /* Increase the width and height for a larger loader */
+    height: 70px;
+    animation: spin 2s linear infinite;
+    display: none; /* Initially hidden */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
