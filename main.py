@@ -1316,11 +1316,13 @@ async def oneplus_press3():
     
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO)
 
-    host = await _host_from_zeroconf(args.scan_timeout)
+    # host = await _host_from_zeroconf(args.scan_timeout)
+    host=False
     if(host):
         oneplus_ip=host
     else:
-        host=find_tvs("OnePlus")
+        # host=find_tvs("OnePlus")
+        host="192.168.3.4"
         oneplus_ip=host
 
     oneplus_remote = AndroidTVRemote(args.client_name, args.certfile, args.keyfile, host)
