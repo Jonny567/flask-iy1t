@@ -8,4 +8,4 @@ Werkzeug==1.0.1
 asn1crypto==1.4.0
 beautifulsoup4==4.12.2
 asgiref==3.7.2
-aioflask==0.4.0
+aiofiles==23.2.1
