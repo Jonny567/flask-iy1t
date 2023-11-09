@@ -30,4 +30,3 @@ paho-mqtt==1.6.1
 priority==2.0.0
 protobuf==4.25.0
 pycparser==2.20
-pynput==1.7.6
